@@ -1,0 +1,5 @@
+local config = {
+  cmd = { vim.fn.expand('C:/Users/User/AppData/Local/nvim-data/mason/bin/jdtls.cmd') },
+  root_dir = vim.fs.root(0, {'gradlew', '.git', 'mvnw'}),
+}
+require('jdtls').start_or_attach(config)
